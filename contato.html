@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/mainClass.css" />
+</head>
+<body>
+
+    <main>
+        <br>
+         <div class="d-grid px-custom-1 gap-2 d-md-flex">
+            <a class="btn btn-outline-dark" href="index.html" role="button"> Voltar </a>
+     
+          </div>
+        <br>
+        <br>
+        <div class="container py-4">
+
+          
+            <form id="contactForm">
+          
+        
+              <div class="mb-3">
+                <label class="form-label" for="name">Nome</label>
+                <input class="form-control" id="name" type="text" placeholder="Nome" data-sb-validations="required" />
+                <div class="invalid-feedback" data-sb-feedback="name:required">Nome necessário</div>
+              </div>
+          
+              <div class="mb-3">
+                <label class="form-label" for="emailAddress">Email</label>
+                <input class="form-control" id="Email" type="email" placeholder="Email" data-sb-validations="required, email" />
+                <div class="invalid-feedback" data-sb-feedback="emailAddress:required">Email é necessário</div>
+                <div class="invalid-feedback" data-sb-feedback="emailAddress:email">Email inválido</div>
+              </div>
+          
+          
+              <div class="mb-3">
+                <label class="form-label" for="message">Mensagem</label>
+                <textarea class="form-control" id="mensagem" type="text" placeholder="Mensagem" style="height: 10rem;" data-sb-validations="required"></textarea>
+              </div>
+          
+          
+              <div class="d-none" id="submitSuccessMessage">
+                <div class="text-center mb-3">Formlário enviado com sucesso</div>
+              </div>
+       
+              <div class="d-none" id="submitErrorMessage">
+                <div class="text-center text-danger mb-3">Erro ao enviar</div>
+              </div>
+          
+              <div class="d-grid">
+                <button class="btn btn-outline-dark btn-lg" type="submit">enviar</button>
+              </div>
+                    <br>
+              
+          
+            </form>
+          
+          </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" ></script>
+</body>
+</html>
